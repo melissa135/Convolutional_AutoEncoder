@@ -11,7 +11,7 @@ class AutoEncoder(nn.Module):
         self.encoder = nn.Sequential(
             nn.Conv1d(1,5,4,stride=4),
             nn.Tanh(),
-            nn.Conv1d(5,10,4,stride=4,padding=1),
+            nn.Conv1d(5,10,4,stride=4),
             nn.Tanh(),
             nn.Conv1d(10,5,3,stride=3),
             nn.Tanh()
@@ -20,7 +20,7 @@ class AutoEncoder(nn.Module):
         self.decoder = nn.Sequential(
             nn.ConvTranspose1d(5,10,3,stride=3),
             nn.Tanh(),
-            nn.ConvTranspose1d(10,5,4,stride=4,padding=1),
+            nn.ConvTranspose1d(10,5,4,stride=4),
             nn.Tanh(),
             nn.ConvTranspose1d(5,1,4,stride=4)
         )
@@ -39,7 +39,7 @@ class ExpressCode(nn.Module):
         self.encoder = nn.Sequential(
             nn.Conv1d(1,5,4,stride=4),
             nn.Tanh(),
-            nn.Conv1d(5,10,4,stride=4,padding=1),
+            nn.Conv1d(5,10,4,stride=4),
             nn.Tanh(),
             nn.Conv1d(10,5,3,stride=3),
             nn.Tanh()
