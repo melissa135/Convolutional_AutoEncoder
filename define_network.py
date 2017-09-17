@@ -32,9 +32,9 @@ class AutoEncoder(nn.Module):
         return x
 
 
-class ExpressCode(nn.Module):
+class Compression_encoder(nn.Module):
     def __init__(self):
-        super(ExpressCode, self).__init__()
+        super(Compression_encoder, self).__init__()
 
         self.encoder = nn.Sequential(
             nn.Conv1d(1,5,4,stride=4),
