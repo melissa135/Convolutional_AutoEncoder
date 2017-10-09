@@ -36,8 +36,8 @@ class Sample_set(data.Dataset):
 
     def __getitem__(self, index):
 
-        item = torch.Tensor([self.data[index][:]]) # add a dimension
-        target = torch.Tensor([self.data[index][:]]) # add a dimension
+        item = torch.Tensor([self.data[index][:]]) # add one more dimension
+        target = torch.Tensor([self.data[index][:]]) # add one more dimension
 
 	return item,target
 
