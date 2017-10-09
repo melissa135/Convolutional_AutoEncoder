@@ -1,6 +1,8 @@
 # Convolutional_AutoEncoder
-A convolutional auto-encoder for compressing time sequence data of stocks.
+A convolutional auto-encoder for compressing time sequence data of stocks.    
+Similar to full-connection autoencoder(https://github.com/melissa135/Denoise_AutoEncoder), but more suitable for time series data.   
 
+## Network
 ```
 AutoEncoder (
   (encoder): Sequential (
