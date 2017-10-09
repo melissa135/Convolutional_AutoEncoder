@@ -22,3 +22,10 @@ AutoEncoder (
   )
 )
 ```
+
+## Result
+The loss sequence on trainset and testset, shows the less loss and smoother curve comparing to full-connection autoencoder.
+![](https://github.com/melissa135/Convolutional_AutoEncoder/blob/master/Figure_1.png)
+
+The original 5-minute K line sequnce and the recovered sequence from compressed vector.
+![](https://github.com/melissa135/Convolutional_AutoEncoder/blob/master/vision_10.png)
